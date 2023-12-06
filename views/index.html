@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social App</title>
+    <style>
+      .gfg {
+        margin: 3%;
+        position: relative;
+      }
+      .first-txt {
+        position: absolute;
+        bottom: 20px;
+        left: 130px;
+      }
+
+      .second-txt {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create a Post</h1>
+    <div>
+      <form action="/addPost" method="post">
+        <label
+          >Post Link:
+          <input type="text" name="postLink" id="postLink" />
+        </label>
+        <br />
+        <label
+          >Post Description:
+          <input type="text" name="postDesc" id="postDesc" />
+        </label>
+        <br />
+        <button type="submit" id="addBtn">Create</button>
+      </form>
+      <h1>All Posts</h1>
+      <div id="allPost"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
